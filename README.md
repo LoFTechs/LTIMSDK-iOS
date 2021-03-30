@@ -1,1 +1,1 @@
-# LTSDK-iOS
+# LTIMSDK-iOS
