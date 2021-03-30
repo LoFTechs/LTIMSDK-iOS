@@ -1,0 +1,6 @@
+framework module JKIMSDK {
+  umbrella header "JKIMSDK.h"
+
+  export *
+  module * { export * }
+}
