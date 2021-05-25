@@ -17,7 +17,7 @@ NS_ASSUME_NONNULL_BEGIN
 + (LTMeetHelper * _Nonnull)new NS_UNAVAILABLE;
 
 #pragma mark - sendMeetInvite
-- (void)sendMeetInviteMessage:(LTMeetInviteMessage *)message completion:(void (^)(LTSendMessageResponse *response, LTErrorInfo *error))completion;
+- (void)sendMeetInviteMessage:(LTMeetInviteMessage *)message completion:(void (^)(LTSendMessageResponse * _Nullable response, LTErrorInfo * _Nullable error))completion;
 
 #pragma mark - queryMeetRoomInfo
 - (void)queryMeetRoomInfoWithTransID:(NSString * _Nonnull)transID chID:(NSString * _Nonnull)chID completion:(void (^_Nullable)(LTQueryMeetRoomInfoResponse * _Nullable response, LTErrorInfo * _Nullable error))completion;

@@ -6,15 +6,13 @@
 //  Copyright © 2020 Sheng-Tsang Uou. All rights reserved.
 //
 
-#import "LTFileMessage.h"
+#import "LTThumbnailFileMessage.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface LTContactMessage : LTFileMessage
+@interface LTContactMessage : LTThumbnailFileMessage
 
 @property (strong, nonatomic) NSString *contactPath;
-
-@property (strong, nonatomic) NSString *thumbnailPath;
 
 @end
 

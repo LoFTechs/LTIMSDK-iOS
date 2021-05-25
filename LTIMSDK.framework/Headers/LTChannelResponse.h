@@ -67,6 +67,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (strong, nonatomic, readonly) NSString *profileImageID;
 
+@property (strong, nonatomic, readonly) LTFileInfo *profileImageFileInfo;
+
 @property (assign, nonatomic, readonly) NSInteger ranking;
 
 @property (assign, nonatomic, readonly) NSInteger availCategory;

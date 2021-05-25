@@ -40,7 +40,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (strong, nonatomic, readonly) NSString *extInfo;
 
-@property (strong, nonatomic, readonly) LTRecallStatus *recallStatus;
+@property (strong, nonatomic, readonly, nullable) LTRecallStatus *recallStatus;
 
 @property (assign, nonatomic, readonly) long long timeToSend;//millisecond
 

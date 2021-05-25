@@ -8,8 +8,8 @@
 
 #import "LTIMEnum.h"
 #import "LTTagUser.h"
-#import "LTFileInfo.h"
 #import "LTLocation.h"
+#import <LTSDK/LTFileInfo.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -36,6 +36,8 @@ NS_ASSUME_NONNULL_BEGIN
 @property (strong, nonatomic) NSSet<LTTagUser *> *tagUsers;
 
 @property (strong, nonatomic) LTFileInfo *fileInfo;
+
+@property (strong, nonatomic) LTFileInfo *thumbnailFileInfo;
 
 @property (strong, nonatomic) LTLocation *location;
 

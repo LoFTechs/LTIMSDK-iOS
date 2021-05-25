@@ -7,6 +7,7 @@
 //
 
 #import "LTUserData.h"
+#import <LTSDK/LTFileInfo.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -15,6 +16,8 @@ NS_ASSUME_NONNULL_BEGIN
 @property (strong, nonatomic, readonly) NSString *nickname;
 
 @property (strong, nonatomic, readonly) NSString *profileImageID;
+
+@property (strong, nonatomic, readonly) LTFileInfo *profileImageFileInfo;
 
 @end
 

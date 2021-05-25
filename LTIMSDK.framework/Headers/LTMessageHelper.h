@@ -31,7 +31,7 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)broadcastMessageWithTransID:(NSString * _Nonnull)transID messages:(NSArray<LTMessage *> * _Nonnull)messages chIDs:(NSArray<NSString *> * _Nonnull)chIDs completion:(void (^_Nullable)(BOOL success, LTErrorInfo * _Nullable error))completion;
 
 #pragma mark - ForwardMessage
-- (void)forwardMessageWithTransID:(NSString * _Nonnull)transID msgIDs:(NSArray<NSString *> * _Nonnull)msgIDs chIDs:(NSArray<NSString *> * _Nonnull)chIDs completion:(void (^_Nullable)(BOOL success, LTErrorInfo *error))completion;
+- (void)forwardMessageWithTransID:(NSString * _Nonnull)transID msgIDs:(NSArray<NSString *> * _Nonnull)msgIDs chIDs:(NSArray<NSString *> * _Nonnull)chIDs completion:(void (^_Nullable)(BOOL success, LTErrorInfo * _Nullable error))completion;
 
 #pragma mark - Recall
 - (void)recallMessageWithTransID:(NSString * _Nonnull)transID msgIDs:(NSArray<NSString *> * _Nonnull)msgIDs silentMode:(BOOL)silentMode completion:(void (^_Nullable)(BOOL success, LTErrorInfo * _Nullable error))completion;
@@ -42,7 +42,7 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)markReadNewsWithTransID:(NSString * _Nonnull)transID chID:(NSString * _Nonnull)chID msgID:(NSString *)msgID markTS:(long long)markTS completion:(void (^_Nullable)(LTMarkReadNewsResponse * _Nullable response, LTErrorInfo * _Nullable error))completion;
 
 #pragma mark - DeleteMessages
-- (void)deleteMessagesWithTransID:(NSString *)transID msgIDs:(NSArray *)msgIDs completion:(void (^)(LTDeleteMessagesResponse *response, LTErrorInfo *error))completion;
+- (void)deleteMessagesWithTransID:(NSString *)transID msgIDs:(NSArray *)msgIDs completion:(void (^)(LTDeleteMessagesResponse * _Nullable response, LTErrorInfo * _Nullable error))completion;
 
 #pragma mark - DeleteChannelMessage
 - (void)deleteChannelMessagesWithTransID:(NSString * _Nonnull)transID chID:(NSString * _Nonnull)chID completion:(void (^_Nullable)(LTDeleteChannelMessagesResponse * _Nullable response, LTErrorInfo * _Nullable error))completion;
@@ -71,7 +71,7 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)queryMessageReadUsersWithTransID:(NSString * _Nonnull)transID msgID:(NSString * _Nonnull)msgID lastReadTime:(NSTimeInterval)lastReadTime count:(NSUInteger)count completion:(void (^_Nullable)(LTQueryMessageReadUsersResponse * _Nullable response, LTErrorInfo * _Nullable error))completion;
 
 #pragma mark - QueryMessage
-- (void)queryMessageWithTransID:(NSString * _Nonnull)transID chID:(NSString * _Nullable)chID markTS:(long long)markTS afterN:(NSInteger)afterN completion:(void (^_Nullable)(LTQueryMessageResponse *response, LTErrorInfo *error))completion;
+- (void)queryMessageWithTransID:(NSString * _Nonnull)transID chID:(NSString * _Nullable)chID markTS:(long long)markTS afterN:(NSInteger)afterN completion:(void (^_Nullable)(LTQueryMessageResponse * _Nullable response, LTErrorInfo * _Nullable error))completion;
 
 #pragma mark - MessageAttr
 - (void)queryMessageAttrWithTransID:(NSString * _Nonnull)transID markTS:(long long)markTS afterN:(NSInteger)afterN completion:(void (^_Nullable)(LTMessageAttrResponse * _Nullable response, LTErrorInfo * _Nullable error))completion;
