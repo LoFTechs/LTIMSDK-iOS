@@ -37,6 +37,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (strong, nonatomic, readonly) NSString *profileID;
 
+@property (strong, nonatomic, readonly) LTFileInfo *profileImageFileInfo;
+
 @property (assign, nonatomic, readonly) LTChannelRole roleID;
 
 @property (strong, nonatomic, readonly) NSString *userID;
