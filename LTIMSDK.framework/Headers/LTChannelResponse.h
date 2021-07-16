@@ -49,6 +49,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (strong, nonatomic, readonly) NSString *lastMsgSenderProfileID;
 
+@property (strong, nonatomic, readonly) LTFileInfo *lastMsgSenderProfileFileInfo;
+
 @property (assign, nonatomic, readonly) long long lastMsgTime;
 
 @property (assign, nonatomic, readonly) long long lastReadTime;
