@@ -41,6 +41,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 // path is nil or empty will delete profile
 - (void)setChannelAvatarWithTransID:(NSString * _Nonnull)transID chID:(NSString * _Nonnull)chID avatarPath:(NSString * _Nonnull)avatarPath completion:(void (^_Nullable)(LTChannelProfileResponse * _Nullable response, LTErrorInfo * _Nullable error))completion progress:(void (^_Nullable)(LTProgressResponse * _Nullable progressResponse, BOOL isDone))progress;
+- (void)deleteChannelAvatarWithTransID:(NSString * _Nonnull)transID chID:(NSString * _Nonnull)chID fileInfo:(LTFileInfo * _Nonnull)fileInfo completion:(void (^_Nullable)(LTChannelProfileResponse * _Nullable response, LTErrorInfo * _Nullable error))completion;
 
 - (void)queryChannelWithTransID:(NSString * _Nonnull)transID chID:(NSString * _Nonnull)chID withMembers:(BOOL)withMembers completion:(void (^_Nullable)(LTQueryChannelsResponse * _Nullable response, LTErrorInfo * _Nullable error))completion;
 - (void)queryChannelWithTransID:(NSString * _Nonnull)transID chTypes:(NSSet<NSNumber *> * _Nonnull)chTypes batchCount:(NSUInteger)batchCount withMembers:(BOOL)withMembers completion:(void (^_Nullable)(LTQueryChannelsResponse * _Nullable response, LTErrorInfo * _Nullable error))completion;

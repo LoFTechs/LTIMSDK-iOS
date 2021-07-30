@@ -14,6 +14,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 + (LTIMManager * _Nullable)getIMManagerWithUserID:(NSString * _Nonnull)userID;
 
++ (void)terminateIMManagerWithUserID:(NSString * _Nonnull)userID;
+
 @end
 
 NS_ASSUME_NONNULL_END

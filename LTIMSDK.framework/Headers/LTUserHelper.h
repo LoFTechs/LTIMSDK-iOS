@@ -37,6 +37,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 #pragma mark - setUserAvatar
 - (void)setUserAvatarWithTransID:(NSString * _Nonnull)transID filePath:(NSString * _Nullable)filePath completion:(void (^_Nullable)(LTSetUserProfileResponse * _Nullable response, LTErrorInfo * _Nullable error))completion progress:(void (^_Nullable)(LTProgressResponse * _Nullable progressResponse, BOOL isDone))progress;
+- (void)deleteUserAvatarWithTransID:(NSString * _Nonnull)transID fileInfo:(LTFileInfo *_Nullable)fileInfo completion:(void (^_Nullable)(LTSetUserProfileResponse * _Nullable response, LTErrorInfo * _Nullable error))completion;
 
 #pragma mark - downloadPlusMenu
 - (void)downloadPlusMenuWithTransID:(NSString * _Nonnull)transID menuID:(NSString * _Nonnull)menuID completion:(void (^_Nullable)(LTDownloadPlusMenuResponse * _Nullable response, LTErrorInfo * _Nullable error))completion;
