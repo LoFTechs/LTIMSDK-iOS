@@ -112,6 +112,7 @@ typedef NS_ENUM(NSInteger, LTMessageType) {
     LTMessageTypeUpdateCompanyPhonebook = 9106,
     LTMessageTypeSystemBindAccount = 9111,
     LTMessageTypeSystemUnbindAccount = 9112,
+    LTMessageTypeSystemUpdateGraphInfo = 9113,
     LTMessageTypeSystemMultipleAccount = 9200,
     LTMessageTypeSystemDeleteUser = 9202,
     LTMessageTypeSystemPrivateMenuUpdate = 9300,
