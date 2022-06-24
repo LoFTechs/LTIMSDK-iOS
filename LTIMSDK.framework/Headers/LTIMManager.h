@@ -22,13 +22,13 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (strong, nonatomic, readonly) LTUser *user;
 
-@property (strong, nonatomic, readonly) LTMessageHelper *messageHelper;
+@property (strong, nonatomic, readonly, nullable) LTMessageHelper *messageHelper;
 
-@property (strong, nonatomic, readonly) LTChannelHelper *channelHelper;
+@property (strong, nonatomic, readonly, nullable) LTChannelHelper *channelHelper;
 
-@property (strong, nonatomic, readonly) LTUserHelper *userHelper;
+@property (strong, nonatomic, readonly, nullable) LTUserHelper *userHelper;
 
-@property (strong, nonatomic, readonly) LTMeetHelper *meetHelper;
+@property (strong, nonatomic, readonly, nullable) LTMeetHelper *meetHelper;
 
 @property (assign, nonatomic) BOOL ignoreSelfIncoming;//default:YES
 

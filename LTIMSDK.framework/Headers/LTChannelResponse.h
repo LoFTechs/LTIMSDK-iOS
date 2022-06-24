@@ -55,6 +55,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (assign, nonatomic, readonly) long long lastReadTime;
 
+@property (assign, nonatomic, readonly) NSUInteger lastMsgMemberCount;
+
 @property (assign, nonatomic, readonly) NSUInteger maxMembers;
 
 @property (assign, nonatomic, readonly) NSUInteger minMembers;
@@ -90,6 +92,10 @@ NS_ASSUME_NONNULL_BEGIN
 @property (assign, nonatomic, readonly) BOOL isMute;
 
 @property (strong, nonatomic, readonly) NSString *ringToneID;
+
+@property (assign, nonatomic, readonly) BOOL isLiveMode;
+
+@property (assign, nonatomic, readonly) long long timeToLive;
 
 @end
 

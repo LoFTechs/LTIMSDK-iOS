@@ -44,6 +44,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (assign, nonatomic, readonly) long long timeToSend;//millisecond
 
+@property (strong, nonatomic, readonly) NSString *groupID;
+
 @end
 
 NS_ASSUME_NONNULL_END

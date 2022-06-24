@@ -14,7 +14,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (strong, nonatomic) NSString *fileName;
 
-@property (strong, nonatomic) NSDictionary *extInfo;
+@property (strong, nonatomic, nullable) NSDictionary *extInfo;
 
 @property (strong, nonatomic) LTFileInfo *fileInfo;
 

@@ -23,6 +23,12 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (strong, nonatomic) LTReplyMessage *replyMessage;
 
+@property (strong, nonatomic) NSString *customInfo;
+
+@property (strong, nonatomic) NSString *groupID;
+
+@property (assign, nonatomic) LTChannelRole toRoleID;
+
 - (LTMessageType)msgType;
 
 @end

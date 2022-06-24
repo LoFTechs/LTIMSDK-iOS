@@ -16,6 +16,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (assign, nonatomic, readonly) NSUInteger count;
 
+@property (assign, nonatomic, readonly) NSUInteger unreadCount;
+
 @end
 
 NS_ASSUME_NONNULL_END

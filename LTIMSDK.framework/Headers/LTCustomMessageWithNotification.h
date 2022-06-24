@@ -12,11 +12,11 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface LTCustomMessageWithNotification : LTMessage
 
-@property (strong, nonatomic) NSString *msgContent;
+@property (strong, nonatomic, nullable) NSString *msgContent;
 
-@property (strong, nonatomic) NSString *msgCategory;
+@property (strong, nonatomic, nullable) NSString *msgCategory;
 
-@property (strong, nonatomic) NSDictionary *extInfo;
+@property (strong, nonatomic, nullable) NSDictionary *extInfo;
 
 @end
 

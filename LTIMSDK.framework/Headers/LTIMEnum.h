@@ -158,4 +158,53 @@ typedef NS_ENUM(NSInteger, LTMeetStatus) {
     LTMeetStatusTimeout
 };
 
+typedef NS_ENUM(NSUInteger,LTMessageSortType) {
+    LTMessageSortLastMessageTime = 1,
+    LTMessageSortUnreadMessageTime = 2
+};
+
+typedef NS_ENUM(NSUInteger,LTUnReadChannelType) {
+    LTUnReadChannelTypeAllChannelType = 0,
+    LTUnReadChannelTypeUnreadMessageChannel = 1,
+    LTUnReadChannelTypeReadMessageChannel = 2
+} ;
+
+typedef NS_ENUM(NSInteger,LTUserSetting) {
+    LTUserSettingAll = -1,
+    LTUserSettingShow = 0,
+    LTUserSettingHidden = 1
+} ;
+
+typedef NS_ENUM(NSInteger, LTMessageFeelingType) {
+    LTMessageFeeling_ALL = -1,
+    LTMessageFeeling_None = 0, // null
+    LTMessageFeeling_1 = 1, // @"1"
+    LTMessageFeeling_2 = 2, // @"2"
+    LTMessageFeeling_3 = 3, // @"3"
+    LTMessageFeeling_4 = 4, // @"4"
+    LTMessageFeeling_5 = 5, // @"5"
+    LTMessageFeeling_6 = 6, // @"6"
+    LTMessageFeeling_7 = 7, // @"7"
+    LTMessageFeeling_8 = 8, // @"8"
+    LTMessageFeeling_9 = 9  // @"9"
+};
+
+typedef NS_ENUM(NSInteger,LTUserBehavior) {
+    LTUserBehaviorNone = 0,
+    LTUserBehaviorEnterChatroom = 1,
+    LTUserBehaviorExitChatroom = 2,
+} ;
+
+typedef NS_ENUM(NSInteger,LTBitSetType) {
+    LTBitSetTypeSetBit = 0,
+    LTBitSetTypeClearBit = 1
+} ;
+
+typedef NS_ENUM(NSInteger,LTReadCountMode) {
+    LTReadCountModeRead = 0,
+    LTReadCountModeUnRead = 1,
+    LTReadCountModeReadUnRead = 2
+} ;
+
+
 NS_ASSUME_NONNULL_END

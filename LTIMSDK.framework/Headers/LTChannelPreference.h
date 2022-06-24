@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "LTIMEnum.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -17,6 +18,12 @@ NS_ASSUME_NONNULL_BEGIN
 @property (strong, nonatomic, readonly) NSString *nickname;
 
 @property (assign, nonatomic, readonly) BOOL isMute;
+
+@property (strong, nonatomic, readonly) NSString *memo;
+
+@property (assign, nonatomic, readonly) NSUInteger userAttr;
+
+@property (assign, nonatomic, readonly) LTUserSetting userSetting;
 
 @end
 
