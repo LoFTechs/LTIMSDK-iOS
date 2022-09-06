@@ -79,6 +79,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (assign, nonatomic, readonly) NSInteger customAttr;
 
+@property (strong, nonatomic, readonly) NSString *customInfo;
+
 @property (assign, nonatomic, readonly) NSUInteger fileSizeLimit;//KB
 
 @property (assign, nonatomic, readonly) NSUInteger unreadCount;

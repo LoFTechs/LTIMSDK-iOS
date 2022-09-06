@@ -54,6 +54,10 @@ NS_ASSUME_NONNULL_BEGIN
 #pragma mark - queryUserProfile
 - (void)queryUserProfileWithTransID:(NSString * _Nonnull)transID userIDs:(NSArray<NSString *> * _Nullable)userIDs phoneNumbers:(NSArray<NSString *> * _Nullable)phoneNumbers completion:(void (^_Nullable)(LTQueryUserProfileResponse * _Nullable response, LTErrorInfo * _Nullable error))completion;
 
+#pragma mark - queryCapability
+
+- (void)queryCapabilityWithTransID:(NSString * _Nonnull)transID completion:(void (^)(LTCapabilityResponse * _Nullable response, LTErrorInfo * _Nullable error))completion;
+
 @end
 
 NS_ASSUME_NONNULL_END

@@ -14,7 +14,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (strong, nonatomic, readonly) NSString *msgID;
 
-@property (assign, nonatomic, readonly) NSUInteger count;
+@property (assign, nonatomic, readonly) NSUInteger readCount;
 
 @property (assign, nonatomic, readonly) NSUInteger unreadCount;
 

@@ -15,6 +15,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (strong, nonatomic, readonly) LTMemberProfile *member;
 
+@property (strong, nonatomic, readonly) NSArray<LTMemberProfile *>*members;
+
 @end
 
 NS_ASSUME_NONNULL_END

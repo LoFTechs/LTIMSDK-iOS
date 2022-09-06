@@ -19,6 +19,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (assign, nonatomic, readonly) LTCapability capability;
 
+@property (strong, nonatomic, readonly) NSString *msgContent;
+
 @end
 
 NS_ASSUME_NONNULL_END

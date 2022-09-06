@@ -110,6 +110,7 @@ typedef NS_ENUM(NSInteger, LTMessageType) {
     LTMessageTypeUpdatePlan = 9104,
     LTMessageTypeUpdateOfficalGroup = 9105,
     LTMessageTypeUpdateCompanyPhonebook = 9106,
+    LTMessageTypeUpdateChannelMetadata = 9109,
     LTMessageTypeSystemBindAccount = 9111,
     LTMessageTypeSystemUnbindAccount = 9112,
     LTMessageTypeSystemUpdateGraphInfo = 9113,
@@ -121,7 +122,7 @@ typedef NS_ENUM(NSInteger, LTMessageType) {
 typedef NS_ENUM(NSUInteger, LTChannelRole) {
     LTChannelRoleNone = 0,
     LTChannelRoleOutcast = 1,
-    LTChannelRoleInvieted = 2,
+    LTChannelRoleInvited = 2,
     LTChannelRoleParticipant = 4,
     LTChannelRoleModerator = 8,
     LTChannelRoleAdmin = 16,

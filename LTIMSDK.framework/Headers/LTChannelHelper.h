@@ -19,11 +19,13 @@ NS_ASSUME_NONNULL_BEGIN
 #pragma mark - enter or leave channel
 - (void)joinChannelWithTransID:(NSString * _Nonnull)transID chID:(NSString * _Nonnull)chID joinMethod:(LTJoinMethod)joinMethod byWho:(NSString * _Nullable)byWho completion:(void (^_Nullable)(LTJoinChannelResponse * _Nullable response, LTErrorInfo * _Nullable error))completion;
 
-- (void)createEnterpriseChannelWithTransID:(NSString * _Nonnull)transID chID:(NSString * _Nonnull)chID channelSubject:(NSString * _Nullable)subject corpID:(NSString * _Nullable)corpID members:(NSSet<LTMemberModel *> * _Nullable)members completion:(void (^_Nullable)(LTCreateChannelResponse * _Nullable response, LTErrorInfo * _Nullable error))completion;
+- (void)createEnterpriseChannelWithTransID:(NSString * _Nonnull)transID chID:(NSString * _Nonnull)chID channelSubject:(NSString * _Nullable)subject corpID:(NSString * _Nullable)corpID members:(NSSet<LTMemberModel *> * _Nullable)members canJoin:(BOOL)canJoin completion:(void (^_Nullable)(LTCreateChannelResponse * _Nullable response, LTErrorInfo * _Nullable error))completion;
 
 - (void)createFanSingleChannelWithTransID:(NSString * _Nonnull)transID fanChID:(NSString * _Nonnull)chID members:(NSSet<LTMemberModel *> * _Nonnull)members corpID:(NSString * _Nullable)corpID completion:(void (^_Nullable)(LTCreateChannelResponse * _Nullable response, LTErrorInfo * _Nullable error))completion;
 
 - (void)createGroupChannelWithTransID:(NSString * _Nonnull)transID chID:(NSString * _Nonnull)chID channelSubject:(NSString * _Nullable)subject members:(NSSet<LTMemberModel *> * _Nullable)members completion:(void (^_Nullable)(LTCreateChannelResponse * _Nullable response, LTErrorInfo * _Nullable error))completion;
+
+- (void)createGroupChannelWithTransID:(NSString * _Nonnull)transID chID:(NSString * _Nonnull)chID channelSubject:(NSString * _Nullable)subject members:(NSSet<LTMemberModel *> * _Nullable)members canJoin:(BOOL)canJoin completion:(void (^_Nullable)(LTCreateChannelResponse * _Nullable response, LTErrorInfo * _Nullable error))completion;
 
 - (void)createMyFileChannelWithTransID:(NSString * _Nonnull)transID completion:(void (^_Nullable)(LTCreateChannelResponse * _Nullable response, LTErrorInfo * _Nullable error))completion;
 
@@ -37,7 +39,10 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (void)kickMembersWithTransID:(NSString * _Nonnull)transID chID:(NSString * _Nonnull)chID members:(NSSet<LTMemberModel *> * _Nullable)members completion:(void (^_Nullable)(LTKickMemberResponse * _Nullable response, LTErrorInfo * _Nullable error))completion;
 
+#pragma mark - set Role
 - (void)setMemberRoleWithTransID:(NSString * _Nonnull)transID chID:(NSString * _Nonnull)chID userID:(NSString * _Nonnull)userID roleID:(LTChannelRole)roleID completion:(void (^_Nullable)(LTMemberRoleResponse * _Nullable response, LTErrorInfo * _Nullable error))completion;
+
+- (void)setMemberRoleWithTransID:(NSString * _Nonnull)transID chID:(NSString * _Nonnull)chID userIDs:(NSArray * _Nonnull)userIDs roleID:(LTChannelRole)roleID completion:(void (^_Nullable)(LTSetChannelMemberProfileResponse * _Nullable response, LTErrorInfo * _Nullable error))completion;
 
 #pragma mark - channel preference
 - (void)setChannelMuteWithTransID:(NSString * _Nonnull)transID chID:(NSString * _Nonnull)chID isMute:(BOOL)isMute completion:(void (^_Nullable)(LTChannelPreferenceResponse * _Nullable response, LTErrorInfo * _Nullable error))completion;
@@ -89,6 +94,9 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)queryUnreadChannelsWithTransID:(NSString * _Nonnull)transID completion:(void (^_Nullable)(LTQueryUnreadChannelsResponse * _Nullable response, LTErrorInfo * _Nullable error))completion;
 
 - (void)queryChannelMembersWithTransID:(NSString * _Nonnull)transID chID:(NSString * _Nonnull)chID lastUserID:(NSString * _Nonnull)lastUserID count:(NSUInteger)count completion:(void (^_Nullable)(LTQueryChannelMembersResponse * _Nullable response, LTErrorInfo * _Nullable error))completion;
+
+#pragma mark - chProperties
+- (void)setChannelChPropertiesWithTransID:(NSString * _Nonnull)transID chID:(NSString * _Nonnull)chID chType:(LTChannelType)chType canJoin:(BOOL)canJoin completion:(void (^_Nullable)(BOOL success, LTErrorInfo * _Nullable error))completion;
 
 - (LTChannelHelper * _Nonnull)init NS_UNAVAILABLE;
 + (LTChannelHelper * _Nonnull)new NS_UNAVAILABLE;

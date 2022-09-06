@@ -72,8 +72,6 @@ NS_ASSUME_NONNULL_BEGIN
 #pragma mark - QueryMessageReadUsers
 - (void)queryMessageReadUsersWithTransID:(NSString * _Nonnull)transID msgID:(NSString * _Nonnull)msgID lastReadTime:(NSTimeInterval)lastReadTime count:(NSUInteger)count completion:(void (^_Nullable)(LTQueryMessageReadUsersResponse * _Nullable response, LTErrorInfo * _Nullable error))completion;
 
-- (void)queryMessageUnReadUsersWithTransID:(NSString *)transID msgID:(NSString *)msgID lastUserID:(NSString *)lastUserID count:(NSUInteger)count completion:(void (^)(LTQueryMessageReadUsersResponse * _Nullable response, LTErrorInfo * _Nullable error))completion;
-
 #pragma mark - QueryMessage
 - (void)queryMessageWithTransID:(NSString * _Nonnull)transID chID:(NSString * _Nullable)chID markTS:(long long)markTS afterN:(NSInteger)afterN completion:(void (^_Nullable)(LTQueryMessageResponse * _Nullable response, LTErrorInfo * _Nullable error))completion;
 
