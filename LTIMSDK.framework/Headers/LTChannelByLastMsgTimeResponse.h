@@ -7,8 +7,10 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "LTIMEnum.h"
+
 #import "LTChannelResponse.h"
+
+#import "LTIMEnum.h"
 
 NS_ASSUME_NONNULL_BEGIN
 

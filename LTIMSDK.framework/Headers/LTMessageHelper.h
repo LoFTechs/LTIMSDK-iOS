@@ -3,7 +3,7 @@
 //  LTIMSDK
 //
 //  Created by Sheng-Tsang Uou on 2020/7/13.
-//  Copyright © 2020 Sheng-Tsang Uou. All rights reserved.
+//  Copyright © 2020 LoFTech. All rights reserved.
 //
 
 #import "LTIMEnum.h"
@@ -34,9 +34,9 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)forwardMessageWithTransID:(NSString * _Nonnull)transID msgIDs:(NSArray<NSString *> * _Nonnull)msgIDs chIDs:(NSArray<NSString *> * _Nonnull)chIDs completion:(void (^_Nullable)(LTForwardMessageResponse *response, LTErrorInfo * _Nullable error))completion;
 
 #pragma mark - Recall
-- (void)recallMessageWithTransID:(NSString * _Nonnull)transID msgIDs:(NSArray<NSString *> * _Nonnull)msgIDs silentMode:(BOOL)silentMode completion:(void (^_Nullable)(BOOL success, LTErrorInfo * _Nullable error))completion;
+- (void)recallMessageWithTransID:(NSString * _Nonnull)transID msgIDs:(NSArray<NSString *> * _Nonnull)msgIDs silentMode:(BOOL)silentMode completion:(void (^_Nullable)(LTRecallMessageResponse * _Nullable response, LTErrorInfo * _Nullable error))completion;
 
-- (void)recallMessageWithTransID:(NSString * _Nonnull)transID msgIDs:(NSArray<NSString *> * _Nonnull)msgIDs silentMode:(BOOL)silentMode customInfo:(NSString * _Nullable)customInfo completion:(void (^_Nullable)(BOOL success, LTErrorInfo * _Nullable error))completion;
+- (void)recallMessageWithTransID:(NSString * _Nonnull)transID msgIDs:(NSArray<NSString *> * _Nonnull)msgIDs silentMode:(BOOL)silentMode customInfo:(NSString * _Nullable)customInfo completion:(void (^_Nullable)(LTRecallMessageResponse * _Nullable response, LTErrorInfo * _Nullable error))completion;
 
 #pragma mark - MarkRead
 - (void)markReadWithTransID:(NSString * _Nonnull)transID chID:(NSString * _Nonnull)chID markTS:(long long)markTS completion:(void (^_Nullable)(LTMarkReadResponse * _Nullable response, LTErrorInfo * _Nullable error))completion;

@@ -3,7 +3,7 @@
 //  LTIMSDK
 //
 //  Created by Zayn on 2020/8/17.
-//  Copyright © 2020 Sheng-Tsang Uou. All rights reserved.
+//  Copyright © 2020 LoFTech. All rights reserved.
 //
 
 #import "LTConfRoomItemResponse.h"

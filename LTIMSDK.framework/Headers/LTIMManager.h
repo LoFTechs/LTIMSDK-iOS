@@ -3,15 +3,15 @@
 //  LTIMSDK
 //
 //  Created by Sheng-Tsang Uou on 2020/7/8.
-//  Copyright © 2020 Sheng-Tsang Uou. All rights reserved.
+//  Copyright © 2020 LoFTech. All rights reserved.
 //
 
 #import <LTSDK/LTSDK.h>
-#import "LTIMEnum.h"
-#import "LTResponseHeader.h"
-#import "LTIMManagerDelegate.h"
-
 #import <UserNotifications/UserNotifications.h>
+
+#import "LTIMEnum.h"
+#import "LTIMManagerDelegate.h"
+#import "LTResponseHeader.h"
 
 NS_ASSUME_NONNULL_BEGIN
 

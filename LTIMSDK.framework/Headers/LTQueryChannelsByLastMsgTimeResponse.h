@@ -6,8 +6,8 @@
 //  Copyright © 2022 Sheng-Tsang Uou. All rights reserved.
 //
 
-#import "LTIQResponse.h"
 #import "LTChannelByLastMsgTimeResponse.h"
+#import "LTIQResponse.h"
 
 NS_ASSUME_NONNULL_BEGIN
 

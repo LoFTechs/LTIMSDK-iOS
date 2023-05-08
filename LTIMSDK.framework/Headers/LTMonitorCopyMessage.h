@@ -3,7 +3,7 @@
 //  LTIMSDK
 //
 //  Created by Zayn on 2020/7/21.
-//  Copyright © 2020 Sheng-Tsang Uou. All rights reserved.
+//  Copyright © 2020 LoFTech. All rights reserved.
 //
 
 #import "LTMessage.h"
@@ -13,6 +13,8 @@ NS_ASSUME_NONNULL_BEGIN
 @interface LTMonitorCopyMessage : LTMessage
 
 @property (strong, nonatomic) NSString *msgContent;
+
+@property (strong, nonatomic, nullable) NSDictionary *extInfo;
 
 @end
 

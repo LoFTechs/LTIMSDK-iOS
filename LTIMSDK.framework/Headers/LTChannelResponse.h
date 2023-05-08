@@ -3,13 +3,14 @@
 //  LTIMSDK
 //
 //  Created by Sheng-Tsang Uou on 2020/7/31.
-//  Copyright © 2020 Sheng-Tsang Uou. All rights reserved.
+//  Copyright © 2020 LoFTech. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
+
 #import "LTIMEnum.h"
-#import "LTUserPrivilege.h"
 #import "LTMemberPrivilege.h"
+#import "LTUserPrivilege.h"
 
 NS_ASSUME_NONNULL_BEGIN
 

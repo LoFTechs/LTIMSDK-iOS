@@ -3,10 +3,11 @@
 //  LTIMSDK
 //
 //  Created by Sheng-Tsang Uou on 2020/7/17.
-//  Copyright © 2020 Sheng-Tsang Uou. All rights reserved.
+//  Copyright © 2020 LoFTech. All rights reserved.
 //
 
 #import "LTIMResponse.h"
+
 #import "LTIMEnum.h"
 #import "LTRecallStatus.h"
 

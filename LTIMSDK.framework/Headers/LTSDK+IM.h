@@ -3,7 +3,7 @@
 //  LTIMSDK
 //
 //  Created by Sheng-Tsang Uou on 2020/7/8.
-//  Copyright © 2020 Sheng-Tsang Uou. All rights reserved.
+//  Copyright © 2020 LoFTech. All rights reserved.
 //
 
 #import <LTIMSDK/LTIMSDK.h>
@@ -15,6 +15,8 @@ NS_ASSUME_NONNULL_BEGIN
 + (LTIMManager * _Nullable)getIMManagerWithUserID:(NSString * _Nonnull)userID;
 
 + (void)terminateIMManagerWithUserID:(NSString * _Nonnull)userID;
+
++ (void)cleanIMSDK;
 
 @end
 

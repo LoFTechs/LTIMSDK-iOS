@@ -3,7 +3,7 @@
 //  LTIMSDK
 //
 //  Created by Sheng-Tsang Uou on 2020/7/9.
-//  Copyright © 2020 Sheng-Tsang Uou. All rights reserved.
+//  Copyright © 2020 LoFTech. All rights reserved.
 //
 
 #import <LTSDK/LTSDK.h>
@@ -78,7 +78,7 @@ typedef NS_ENUM(NSInteger, LTMessageType) {
     LTMessageTypeModifyUserProfile = 1016,
     LTMessageTypeCreateChannel = 1017,
     LTMessageTypeModifyChannelMemberProfile = 1018,
-    LTMessageTypeReadMsg = 1101,//Zayn：新加的
+    LTMessageTypeReadMsg = 1101,
     LTMessageTypeDeleteMsg = 1102,
     LTMessageTypeDeleteChannelMsg = 1103,
     LTMessageTypeRecall = 1104,
@@ -117,6 +117,7 @@ typedef NS_ENUM(NSInteger, LTMessageType) {
     LTMessageTypeSystemMultipleAccount = 9200,
     LTMessageTypeSystemDeleteUser = 9202,
     LTMessageTypeSystemPrivateMenuUpdate = 9300,
+    LTMessageTypeSystemAccountChangePassword = 9501,
 };
 
 typedef NS_ENUM(NSUInteger, LTChannelRole) {

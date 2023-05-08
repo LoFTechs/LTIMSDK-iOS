@@ -3,10 +3,11 @@
 //  LTIMSDK
 //
 //  Created by Zayn on 2020/8/18.
-//  Copyright © 2020 Sheng-Tsang Uou. All rights reserved.
+//  Copyright © 2020 LoFTech. All rights reserved.
 //
 
 #import "LTIQResponse.h"
+
 #import "LTMessageReadCount.h"
 
 NS_ASSUME_NONNULL_BEGIN

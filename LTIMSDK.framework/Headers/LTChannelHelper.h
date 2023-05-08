@@ -3,14 +3,15 @@
 //  LTIMSDK
 //
 //  Created by Sheng-Tsang Uou on 2020/7/16.
-//  Copyright © 2020 Sheng-Tsang Uou. All rights reserved.
+//  Copyright © 2020 LoFTech. All rights reserved.
 //
 
+#import <LTSDK/LTErrorInfo.h>
+
 #import "LTIMEnum.h"
+#import "LTMemberModel.h"
 #import "LTMessageHeader.h"
 #import "LTResponseHeader.h"
-#import <LTSDK/LTErrorInfo.h>
-#import "LTMemberModel.h"
 
 NS_ASSUME_NONNULL_BEGIN
 

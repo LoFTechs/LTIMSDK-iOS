@@ -3,7 +3,7 @@
 //  LTIMSDK
 //
 //  Created by Zayn on 2020/10/5.
-//  Copyright © 2020 Sheng-Tsang Uou. All rights reserved.
+//  Copyright © 2020 LoFTech. All rights reserved.
 //
 
 #import "LTMessageResponse.h"
