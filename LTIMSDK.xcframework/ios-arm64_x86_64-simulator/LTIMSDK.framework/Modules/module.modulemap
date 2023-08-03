@@ -1,0 +1,6 @@
+framework module LTIMSDK {
+  umbrella header "LTIMSDK.h"
+
+  export *
+  module * { export * }
+}
