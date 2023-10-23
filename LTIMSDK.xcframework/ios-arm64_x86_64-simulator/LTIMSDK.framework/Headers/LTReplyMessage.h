@@ -28,6 +28,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (strong, nonatomic) NSString *displayText;
 
+@property (strong, nonatomic) NSString *filename;
+
 @property (assign, nonatomic) long long sendTime;//millisecond
 
 @property (strong, nonatomic) NSString *previewUrl;

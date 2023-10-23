@@ -117,7 +117,8 @@ typedef NS_ENUM(NSInteger, LTMessageType) {
     LTMessageTypeSystemMultipleAccount = 9200,
     LTMessageTypeSystemDeleteUser = 9202,
     LTMessageTypeSystemPrivateMenuUpdate = 9300,
-    LTMessageTypeSystemAccountChangePassword = 9501,
+    LTMessageTypeSystemAccountChangeInfo = 9501,
+    LTMessageTypeSystemPermissionUpdate = 9502,
 };
 
 typedef NS_ENUM(NSUInteger, LTChannelRole) {
