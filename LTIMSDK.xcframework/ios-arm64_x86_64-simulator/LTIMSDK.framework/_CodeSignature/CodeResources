@@ -542,11 +542,15 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		gWKIpl4YsiJ2K8pcf6T9TUA1MoM=
+		EuMB9cc4HARltXdL41LW4MRwQSg=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
 		H8cw367ZxClyGJI5GwpOyPzRxNU=
+		</data>
+		<key>PrivacyInfo.xcprivacy</key>
+		<data>
+		N/486RBQrg+AZL/sovI6xdmscu0=
 		</data>
 		<key>XMPPCapabilities.mom</key>
 		<data>
@@ -2094,6 +2098,17 @@
 			<key>hash2</key>
 			<data>
 			T4uU+MYqehhyUEGTypmz5+0cqspOIOO5GyajQHOVtSQ=
+			</data>
+		</dict>
+		<key>PrivacyInfo.xcprivacy</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			N/486RBQrg+AZL/sovI6xdmscu0=
+			</data>
+			<key>hash2</key>
+			<data>
+			6AoW1SvhmIzrhiPK1lhn3ZJ/YZS2EWHiD7WF/pFJxec=
 			</data>
 		</dict>
 		<key>XMPPCapabilities.mom</key>
